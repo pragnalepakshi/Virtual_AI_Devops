@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  ai-artistic-style-service:
+    image: urmsandeep/ai-artistic-style-service:latest
+    container_name: ai-artistic-style
+    ports:
+      - "5002:5001"  # Map host port 5002 to container port 5001
+    restart: always
